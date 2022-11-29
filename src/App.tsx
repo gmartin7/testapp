@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import List from "./components/list";

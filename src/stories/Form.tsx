@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Button } from "./Button";
 import "./form.css";
 
@@ -8,7 +8,7 @@ interface FormProps {
     name?: string;
 }
 
-export const Form = ({
+export const Form: FunctionComponent<FormProps> = ({
     placeholder = "Enter your email",
     ...props
 }: FormProps) => {
