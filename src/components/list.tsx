@@ -7,8 +7,8 @@ const listData = [
 ]
 export const List: FunctionComponent = () => {
     const getListItems = () => {
-        return listData.map(el => {
-            return <li>{el.name}</li>
+        return listData.map((el, index) => {
+            return <li key={index}>{el.name}</li>
         })
     };
 
